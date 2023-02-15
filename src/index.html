@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind CDN play -->
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <title>exam</title>
-</head>
-<body>
-    <h1 class="bg-green-600 p-4 w-80 mx-auto rounded-3xl">demo</h1>
+  </head>
+  <body class="bg-gray-200">
+    <header class="mb-[11px] ">
+      <div class="max-w-screen-1xl w-full mx-auto bg-white ">
+        <div class="flex justify-around">
+          <div class="flex justify-start items-center">
+            <img class="p-[27px]" src="./images/main_logo.svg" alt="" />
 
-</body>
+            <a class="mr-[20px] hover:bg-gray-200 rounded-2xl duration-200 p-2" href="#">Categories</a>
+
+            <select class="p-[18px] hover:bg-gray-200 rounded-2xl duration-200" name="" id="">
+              <option value="" selected disabled>About Us</option>
+              <option value="">News</option>
+              <option value="">Careers</option>
+              <option value="">Locations</option>
+            </select>
+
+            <select class="p-[18px] hover:bg-gray-200 rounded-2xl duration-200" name="" id="">
+              <option value="Career">Help Center</option>
+              <option value="Career">FAQ</option>
+              <option value="Career">Contact us</option>
+            </select>
+          </div>
+
+          <div class="flex justify-start items-center">
+            <p class="pr-[24px]">+1 855 420 000</p>
+            <button>
+              <img class="pr-[16px]" src="./images/moon_icon_dark.svg" alt="" />
+            </button>
+
+            <span
+              class="login flex justify-evenly items-center w-[142px] h-[58px] p-4 rounded-full text-white"
+            >
+              <p class="text-[18px] leading-[22px]">Login</p>
+              <img class="" src="./images/login_icon_white.svg" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+  </body>
 </html>
