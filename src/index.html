@@ -5,52 +5,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind CDN play -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Work+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      
+    
     <title>exam</title>
   </head>
   <body class="bg-gray-200">
-    <header class="mb-[11px] ">
-      <div class="max-w-screen-1xl w-full mx-auto bg-white ">
+    <header class="bg-white">
+      <div class="max-w-screen-1xl w-full mx-auto ">
         <div class="flex justify-around">
-          <div class="flex justify-start items-center">
+          <nav class="nav flex justify-start items-center">
             <img class="p-[27px]" src="./images/main_logo.svg" alt="" />
+            <a class="mr-[20px]  hover:bg-gray-200 rounded-full duration-200 p-4" href="#">Categories</a>
+            <ul class="flex justify-between p-4 hover:bg-gray-200 rounded-full duration-200">
+              <li>About Us <i class='bx bx-chevron-down'></i></li>
+            </ul>
 
-            <a class="mr-[20px] hover:bg-gray-200 rounded-2xl duration-200 p-2" href="#">Categories</a>
+            <ul class="flex justify-between p-4 hover:bg-gray-200 rounded-full duration-200">
+              <li>Help center <i class='bx bx-chevron-down'></i></li>
+            </ul>
 
-            <select class="p-[18px] hover:bg-gray-200 rounded-2xl duration-200" name="" id="">
-              <option value="" selected disabled>About Us</option>
-              <option value="">News</option>
-              <option value="">Careers</option>
-              <option value="">Locations</option>
-            </select>
-
-            <select class="p-[18px] hover:bg-gray-200 rounded-2xl duration-200" name="" id="">
-              <option value="Career">Help Center</option>
-              <option value="Career">FAQ</option>
-              <option value="Career">Contact us</option>
-            </select>
-          </div>
+          </nav>
 
           <div class="flex justify-start items-center">
-            <p class="pr-[24px]">+1 855 420 000</p>
-            <button>
-              <img class="pr-[16px]" src="./images/moon_icon_dark.svg" alt="" />
-            </button>
-
-            <span
-              class="login flex justify-evenly items-center w-[142px] h-[58px] p-4 rounded-full text-white"
-            >
-              <p class="text-[18px] leading-[22px]">Login</p>
+            <p class="pr-[24px] font-bold">+1 855 420 000</p>
+            <input type="checkbox" id="them" />
+            
+            <!-- <button class="btn">
+              <img class="pr-[16px]" src="./images/moon_icon_dark.svg" alt=""  />
+            </button> -->
+            <span class="login flex justify-evenly items-center w-[142px] h-[58px] ml-4 p-4 rounded-full text-white ">
+              <p class="text-[18px]  leading-[22px]">Login</p>
               <img class="" src="./images/login_icon_white.svg" alt="" />
             </span>
           </div>
+
         </div>
       </div>
     </header>
-    
+
+    <div class=" hidden mx-auto absolute bg-white rounded-[20px] w-[590px] h-[483px]">
+      <div>
+        <img src="./images/cross_1.svg" alt="">
+        <p class="mt-[20px] text-[36px] leading-[44px] max-w-[568px] text-center font-bold">Login</p>
+        <p class="mt-[10px] mb-[32px] text-[16px] leading-[24px] max-w-[568px] text-center text-gray-600">Use the email and password that you login</p>
+      </div>
+      <form action="#">
+        <div class="flex flex-col items-center">
+        <label for="task" class="mb-4">
+                  <input
+                  id="task"
+                    type="text"
+                    placeholder="Email"
+                    class=" placeholder:p-5 p-2 w-[526px] h-[58px] shadow  rounded-full border-spacing-1 border border-blue-400"
+                  />
+                </label>
+                  <label for="task" class="">
+                  <input
+                  id="task"
+                    type="text"
+                    placeholder="Password"
+                    class="placeholder:p-5  p-2 w-[526px] h-[58px] shadow  rounded-full border-spacing-1 border border-blue-400"
+                  />
+                </label>
+                </div>
+      </form>
+    </div>
+
+    <div class=" slick_List max-w-screen-1xl w-[1200px] mx-auto flex justify-center">
+      <img class="rounded-xl" src="./images/carousel_1.png" alt="">
+      <img class="rounded-xl" src="./images/carousel_2.png" alt="">
+      <img class="rounded-xl" src="./images/carousel_3.png" alt="">
+    </div>
+
+    <section>
+      <div class="container max-w-screen-1xl w-full mx-auto ">
+        <div class="flex justify-center items-center">
+          <div class="items-center">
+            <p class="text-[36px] leading-[44px] max-w-[568px] mt-[133px] text-center font-bold">Choose the car of your dreams</p>
+            <p class="mt-[10px] text-[16px] leading-[24px] max-w-[568px] text-center text-gray-600">We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet</p>
+          </div>
+          
+        </div>
+        <ul class="flex justify-center items-center  w-full mt-[40px] mb-[24px]">
+            <li class=" login px-[46px] py-[19px] mr-4 rounded-full border ">Compact</li>
+            <li class="px-[46px] py-[19px] mr-4  rounded-full border border-gray-300 hover:bg-gray-200">Sports cars</li>
+            <li class="px-[46px] py-[19px] rounded-full  border border-gray-300  hover:bg-gray-200">Vans</li>
+          </ul>
+
+        <div class="cards mx-auto flex flex-wrap justify-center  gap-5 ">
+
+          <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+
+          <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+
+          <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+
+          <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+
+           <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+
+           <div class="card  w-[387px] h-[433px] rounded-2xl">
+            <p class="text-[24px] leading-[29px] text-start pt-[30px] pl-[24px] font-bold hover:">Ford Fiesta</p>
+            <p class="mt-2 text-[16px] leading-[20px] pl-6 pb-4 text-start text-gray-600">Economy Car</p>
+            <img class="pb-4" src="./images/ford_fiesta.svg" alt="">  
+
+            <div class="flex justify-start flex-wrap "> 
+
+            <ul class=" pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/seats_default.svg" alt="">
+              <li class="text-[16px]">5 Seats</li>
+            </ul>
+
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/pkk_default.svg" alt="">
+              <li class="text-[16px]">Automatic</li>
+            </ul>
+            
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start">
+              <img class="pr-[16px] " src="./images/Icon.svg" alt="">
+              <li class="text-[16px]">21+ Years</li>
+            </ul>
+            <ul class="pl-[24px] pb-6 w-[175px] flex justify-start items-center">
+              <img class="pr-[21px]" src="./images/oil_default.svg" alt="">
+              <li class="text-[16px]">1-lit / 2.5 km</li>
+            </ul> 
+            </div>
+          </div>
+        
+
+
+        </div>
+
+        <ul class="flex justify-center items-center  w-full mt-[40px]">
+            <li class=" login px-[46px] py-[19px] mr-4 rounded-full border text-white">View all cars</li> 
+          </ul>
+
+      </div>
+    </section>
+
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script src="./js/carousel.js"></script>
+  <script src="./script.js"></script>
 </html>
